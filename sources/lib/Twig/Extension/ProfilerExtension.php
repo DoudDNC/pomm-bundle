@@ -47,7 +47,7 @@ class ProfilerExtension extends \Twig_Extension
     {
         $r = new \ReflectionClass('PommProject\\SymfonyBridge\\DatabaseDataCollector');
 
-        return dirname(dirname(dirname($r->getFileName()))).'/views';
+        return dirname($r->getFileName(), 3) .'/views';
     }
 
     /**
