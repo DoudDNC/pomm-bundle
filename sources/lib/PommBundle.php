@@ -12,6 +12,7 @@ namespace PommProject\PommBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\PassConfig;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 /**
  * PommBundle
@@ -45,7 +46,7 @@ class PommBundle extends Bundle
 
     private function checkPhpVersion()
     {
-        if (PHP_MAJOR_VERSION === 5) {
+        if (PHP_MAJOR_VERSION <= 7) {
             @trigger_error('The pomm bundle stop supporting PHP5 in version 3.0', E_USER_DEPRECATED);
         }
     }
@@ -55,7 +56,7 @@ class PommBundle extends Bundle
      *
      * @see Bundle
      */
-    public function getContainerExtension()
+    public function getContainerExtension(): ?ExtensionInterface
     {
         return new DependencyInjection\PommExtension();
     }

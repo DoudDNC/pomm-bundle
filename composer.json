@@ -16,10 +16,10 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
+    "php": ">=8.0.2",
     "jdorn/sql-formatter": "~1.2",
-    "pomm-project/model-manager": "~2.0",
-    "pomm-project/cli": "~2.0",
+    "pomm-project/model-manager": "dev-upgrade-sf-6",
+    "pomm-project/cli": "dev-upgrade-sf-6",
     "pomm-project/pomm-symfony-bridge": "dev-upgrade-sf-6",
     "symfony/framework-bundle": "^3.4|^4.3|^5.0|~6.0"
   },
@@ -44,7 +44,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/DoudDNC/pomm-bundle"
+      "url": "https://github.com/DoudDNC/pomm-symfony-bridge"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/DoudDNC/model-manager"
     }
   ]
 }
