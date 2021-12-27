@@ -16,7 +16,7 @@
     }
   ],
   "require": {
-    "php": ">=8.1",
+    "php": ">=8.0",
     "jdorn/sql-formatter": "~1.2",
     "pomm-project/model-manager": "3.0.0",
     "pomm-project/cli": "3.0.0",
