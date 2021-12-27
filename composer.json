@@ -1,7 +1,7 @@
 {
   "name": "pomm-project/pomm-bundle",
   "type": "symfony-bundle",
-  "description": "The Symfony2 bundle for Pomm2",
+  "description": "The Symfony6 bundle for Pomm3",
   "keywords": ["orm", "postgresql", "database", "symfony", "pomm"],
   "homepage": "http://www.pomm-project.org",
   "license": "MIT",
@@ -38,7 +38,7 @@
   },
   "extra": {
       "branch-alias": {
-          "dev-master": "4.0-dev"
+          "dev-master": "4.1-dev"
       }
   },
     "repositories": [
