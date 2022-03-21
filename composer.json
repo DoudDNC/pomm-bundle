@@ -18,9 +18,9 @@
   "require": {
     "php": ">=8.0",
     "jdorn/sql-formatter": "~1.2",
-    "pomm-project/model-manager": "~3.0",
-    "pomm-project/cli": "~3.0",
-    "pomm-project/pomm-symfony-bridge": "~4.0",
+    "pomm-project/model-manager": "~3.0@dev",
+    "pomm-project/cli": "~3.0@dev",
+    "pomm-project/pomm-symfony-bridge": "~4.0@dev",
     "symfony/framework-bundle": "^6.0"
   },
   "require-dev": {
